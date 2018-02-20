@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{32ffed60-aba0-4b7b-8f66-d3526361cc2f}</ProjectGuid>
+    <RootNamespace>SimpleDirectXGame</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+    <ProjectName>SimpleDirectXGame</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <PackageCertificateKeyFile>SimpleDirectXGame_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <Link>
+      <AdditionalDependencies>d2d1.lib; xinput.lib; d3d11.lib; dxgi.lib; ole32.lib; windowscodecs.lib; dwrite.lib; %(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>$(IntDir)pch.pch</PrecompiledHeaderOutputFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\DirectXTK\inc;$(ProjectDir);$(IntermediateOutputPath);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4453</DisableSpecificWarnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="Assets\arrow.png" />
+    <Image Include="Assets\BlankPlatform.png" />
+    <Image Include="Assets\BugDeathSpriteBody.png" />
+    <Image Include="Assets\BugDeathSpriteHead.png" />
+    <Image Include="Assets\bugdeathspriteheadplaceholder.png" />
+    <Image Include="Assets\bugwalksprite.png" />
+    <Image Include="Assets\bullet.png" />
+    <Image Include="Assets\chain lift.png" />
+    <Image Include="Assets\ChainLift.png" />
+    <Image Include="Assets\ClosedDoor.png" />
+    <Image Include="Assets\Factory scene 1 level plan.png" />
+    <Image Include="Assets\Factory scene 2 plan.png" />
+    <Image Include="Assets\Factory scene 3 with notes.png" />
+    <Image Include="Assets\Factory scene 4 plan.png" />
+    <Image Include="Assets\Factory scene 5 plan.png" />
+    <Image Include="Assets\Factory scene 6 plan.png" />
+    <Image Include="Assets\Factory scene 7 plan.png" />
+    <Image Include="Assets\Factory scene 8 plan.png" />
+    <Image Include="Assets\Factory scene 9 plan.png" />
+    <Image Include="Assets\Heart_Asset.png" />
+    <Image Include="Assets\HeroMindControl.png" />
+    <Image Include="Assets\Hud_01.png" />
+    <Image Include="Assets\ladder.png" />
+    <Image Include="Assets\Ladder2.png" />
+    <Image Include="Assets\Level10Background.png" />
+    <Image Include="Assets\Level1Background.png" />
+    <Image Include="Assets\Level2Background.png" />
+    <Image Include="Assets\HeroJumpIdle.png" />
+    <Image Include="Assets\HeroWalkSprite.png" />
+    <Image Include="Assets\hooks.png" />
+    <Image Include="Assets\Level3Background.png" />
+    <Image Include="Assets\Level4Background.png" />
+    <Image Include="Assets\Level5Background.png" />
+    <Image Include="Assets\Level6Background.png" />
+    <Image Include="Assets\Level7Background.png" />
+    <Image Include="Assets\Level8Background.png" />
+    <Image Include="Assets\Level9Background.png" />
+    <Image Include="Assets\Logo.png" />
+    <Image Include="Assets\OpenDoor.png" />
+    <Image Include="Assets\Outdoor Scene plan.png" />
+    <Image Include="Assets\PainKillerSprite.png" />
+    <Image Include="Assets\PainKiller_Asset.png" />
+    <Image Include="Assets\Pressurepaddown.png" />
+    <Image Include="Assets\Pressurepadup.png" />
+    <Image Include="Assets\SmallLogo.png" />
+    <Image Include="Assets\SpriteEnemiesLeft.png" />
+    <Image Include="Assets\SpriteHearts.png" />
+    <Image Include="Assets\StoreLogo.png" />
+    <Image Include="Assets\SplashScreen.png" />
+    <Image Include="Assets\sdklogo.png" />
+    <Image Include="Assets\water drop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BackgroundLoader.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Common_DirectX\BasicTimer.h" />
+    <ClInclude Include="Enemy.h" />
+    <ClInclude Include="EnemyHead.h" />
+    <ClInclude Include="GameController.h" />
+    <ClInclude Include="Hearts.h" />
+    <ClInclude Include="HeroSprite.h" />
+    <ClInclude Include="Hud.h" />
+    <ClInclude Include="PainKiller1.h" />
+    <ClInclude Include="PlatformLoader.h" />
+    <ClInclude Include="PressurePlate.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SpriteEnemiesLeft.h" />
+    <ClInclude Include="SpriteGame.h" />
+    <ClInclude Include="SimpleDirectXGame.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Switch.h" />
+    <ClInclude Include="Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BackgroundLoader.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="EnemyHead.cpp" />
+    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="Hearts.cpp" />
+    <ClCompile Include="HeroSprite.cpp" />
+    <ClCompile Include="Hud.cpp" />
+    <ClCompile Include="PainKiller1.cpp" />
+    <ClCompile Include="PlatformLoader.cpp" />
+    <ClCompile Include="PressurePlate.cpp" />
+    <ClCompile Include="SimpleDirectXGame.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SpriteEnemiesLeft.cpp" />
+    <ClCompile Include="SpriteGame.cpp" />
+    <ClCompile Include="Switch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\italic.spritefont">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="SimpleDirectXGame_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DirectXTK\DirectXTK_Windows8.vcxproj">
+      <Project>{e0b52ae7-e160-4d32-bf3f-910b785e5a8e}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimpleDirectXGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

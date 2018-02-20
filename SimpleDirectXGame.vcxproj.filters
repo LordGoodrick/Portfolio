@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common_DirectX">
+      <UniqueIdentifier>4dcba141-f9fc-492c-9e19-070581b1505a</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>70d2f54a-b92f-4335-a946-4733f1171346</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 3 Assets">
+      <UniqueIdentifier>{e6e8320c-6965-43fb-a466-8d0b33100e3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 1 Assets">
+      <UniqueIdentifier>{670d259f-8992-4633-8800-3f84b31bac8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Enemies">
+      <UniqueIdentifier>{b599c02d-6a10-43fc-b242-5b590042a54f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\System Images">
+      <UniqueIdentifier>{7648f1f6-b4b5-4032-a85a-45c45cd5499e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level Tools">
+      <UniqueIdentifier>{ec47ce59-d2e4-4acc-8b6c-9b0bee9c9027}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 2 Assets">
+      <UniqueIdentifier>{004f5042-4221-458a-a42d-2c389adc6897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 4 Assets">
+      <UniqueIdentifier>{9392d6d3-63d4-43b1-9550-bc1a95f75b73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 5 Assets">
+      <UniqueIdentifier>{c7a26427-143d-487b-ac95-3d05ebd5e2b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 6 Assets">
+      <UniqueIdentifier>{fe6ddbbb-ab90-4212-b012-2603a65f6758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 7 Assets">
+      <UniqueIdentifier>{405596f3-c42f-4197-93e7-95f05a4a156c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 8 Assets">
+      <UniqueIdentifier>{d1225ba0-bd87-4304-b3c3-1a3adf7777bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 9 Assets">
+      <UniqueIdentifier>{24af8844-cb23-46b7-b56a-6ee251325e8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Level 10 Assets">
+      <UniqueIdentifier>{4305b7d1-b0d9-4fd0-aea2-aabdfa67ded2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hud and Assets">
+      <UniqueIdentifier>{718e9df9-b5e9-4721-ac28-47360653ec93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Enemy Code">
+      <UniqueIdentifier>{ed7d4035-59d2-4d92-b8af-5d019eeae750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Backgrounds and Platforms">
+      <UniqueIdentifier>{c8800baf-79fb-4abb-9634-41b4fda0288c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="SpriteGame.h" />
+    <ClInclude Include="SimpleDirectXGame.h" />
+    <ClInclude Include="Common_DirectX\BasicTimer.h">
+      <Filter>Common_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="GameController.h" />
+    <ClInclude Include="Utilities.h">
+      <Filter>Common_DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroSprite.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Switch.h" />
+    <ClInclude Include="SpriteEnemiesLeft.h" />
+    <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Hearts.h">
+      <Filter>Hud and Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Hud and Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="PainKiller1.h">
+      <Filter>Hud and Assets</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>Enemy Code</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyHead.h">
+      <Filter>Enemy Code</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundLoader.h">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformLoader.h">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClInclude>
+    <ClInclude Include="PressurePlate.h">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\HeroWalkSprite.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 3 with notes.png">
+      <Filter>Assets\Level 3 Assets</Filter>
+    </Image>
+    <Image Include="Assets\HeroJumpIdle.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 1 level plan.png">
+      <Filter>Assets\Level 1 Assets</Filter>
+    </Image>
+    <Image Include="Assets\BugDeathSpriteBody.png">
+      <Filter>Assets\Enemies</Filter>
+    </Image>
+    <Image Include="Assets\BugDeathSpriteHead.png">
+      <Filter>Assets\Enemies</Filter>
+    </Image>
+    <Image Include="Assets\bugdeathspriteheadplaceholder.png">
+      <Filter>Assets\Enemies</Filter>
+    </Image>
+    <Image Include="Assets\bugwalksprite.png">
+      <Filter>Assets\Enemies</Filter>
+    </Image>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets\System Images</Filter>
+    </Image>
+    <Image Include="Assets\sdklogo.png">
+      <Filter>Assets\System Images</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets\System Images</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets\System Images</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets\System Images</Filter>
+    </Image>
+    <Image Include="Assets\chain lift.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\hooks.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\Pressurepadup.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\water drop.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 2 plan.png">
+      <Filter>Assets\Level 2 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 4 plan.png">
+      <Filter>Assets\Level 4 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 6 plan.png">
+      <Filter>Assets\Level 6 Assets</Filter>
+    </Image>
+    <Image Include="Assets\ladder.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 7 plan.png">
+      <Filter>Assets\Level 7 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 8 plan.png">
+      <Filter>Assets\Level 8 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 9 plan.png">
+      <Filter>Assets\Level 9 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Outdoor Scene plan.png">
+      <Filter>Assets\Level 10 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level1Background.png">
+      <Filter>Assets\Level 1 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level6Background.png">
+      <Filter>Assets\Level 6 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level7Background.png">
+      <Filter>Assets\Level 7 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level8Background.png">
+      <Filter>Assets\Level 8 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level9Background.png">
+      <Filter>Assets\Level 9 Assets</Filter>
+    </Image>
+    <Image Include="Assets\BlankPlatform.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\HeroMindControl.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Factory scene 5 plan.png">
+      <Filter>Assets\Level 5 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level5Background.png">
+      <Filter>Assets\Level 5 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level10Background.png">
+      <Filter>Assets\Level 10 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level2Background.png">
+      <Filter>Assets\Level 2 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level3Background.png">
+      <Filter>Assets\Level 3 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Level4Background.png">
+      <Filter>Assets\Level 4 Assets</Filter>
+    </Image>
+    <Image Include="Assets\Ladder2.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\Heart_Asset.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\PainKiller_Asset.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\PainKillerSprite.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\SpriteEnemiesLeft.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\SpriteHearts.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\bullet.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Pressurepaddown.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\Hud_01.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\ClosedDoor.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\OpenDoor.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\ChainLift.png">
+      <Filter>Assets\Level Tools</Filter>
+    </Image>
+    <Image Include="Assets\arrow.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="SpriteGame.cpp" />
+    <ClCompile Include="SimpleDirectXGame.cpp" />
+    <ClCompile Include="GameController.cpp" />
+    <ClCompile Include="HeroSprite.cpp" />
+    <ClCompile Include="Switch.cpp" />
+    <ClCompile Include="SpriteEnemiesLeft.cpp" />
+    <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Hearts.cpp">
+      <Filter>Hud and Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Hud and Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="PainKiller1.cpp">
+      <Filter>Hud and Assets</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>Enemy Code</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyHead.cpp">
+      <Filter>Enemy Code</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundLoader.cpp">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformLoader.cpp">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClCompile>
+    <ClCompile Include="PressurePlate.cpp">
+      <Filter>Backgrounds and Platforms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleDirectXGame_TemporaryKey.pfx" />
+    <None Include="Assets\italic.spritefont">
+      <Filter>Assets</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SimpleDirectXGame.rc" />
+  </ItemGroup>
+</Project>
